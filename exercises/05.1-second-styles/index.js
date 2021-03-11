@@ -1,15 +1,22 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import PropTypes from "prop-types";
+import PropTypes, { nominalTypeHack } from "prop-types";
 
 const buttonStyles = {
 	//write button styles here
-
+	backgroundColor: "yellow",
+	borderRadius: "5px",
+	border: "none",
+	color: "black",
+	fontWeight: "bold"
 };
 
 const badgeStyles = {
 	//write the span styles here
-
+	backgroundColor: "red",
+	borderRadius: "10px",
+	color: "white",
+	marginLeft: "2px"
 };
 
 const Badge = props => {
